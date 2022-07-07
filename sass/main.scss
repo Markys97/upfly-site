@@ -1,0 +1,66 @@
+@import './reset/reset';
+
+@import './util/global';
+
+// секции для страници " index"
+@import './layout/header';
+@import './layout/our-work';
+@import './layout/skill';
+@import './layout/with-us';
+@import './layout/cases';
+@import './layout/writing';
+@import './layout/contact';
+@import './layout/end';
+
+// секции для страници " О НАС"
+
+@import './layout/introduction';
+@import './layout/employee';
+@import './layout/about-contact';
+
+
+
+// секции для страници " О КОМПАНИИ"
+@import './layout/company-about';
+@import './layout/comp-about-us';
+@import './layout/company-job';
+@import './layout/company-review';
+
+// секции для страници " 9. Услуга-Яндекс директ"
+@import './layout/yandex-direct';
+
+// секции для страници " 404"
+@import './layout/404';
+
+// секции для страници " Спасибо за обратную связь!"
+@import './layout/thanks';
+
+// секции для страници " ВАКАНСИИ"
+@import './layout/vacancie';
+
+// секции для страници " ОТЗЫВЫ"
+@import './layout/comment-page';
+
+// секции для страници " КЕЙСЫ"
+@import './layout/case-page';
+
+// секции для страници " блог"
+@import './layout/blog-page';
+// секции для страници " video shoot"
+@import './layout/video-page';
+
+// секции для страници " site navigation"
+@import './layout/menu-site';
+
+// секции для страници " site Услуг"
+@import './layout/condition';
+
+// секции для страници " site Контакты"
+@import './layout/contact-page';
+
+
+//  страници сайта
+@import './page/about';
+@import './page/company';
+@import './page/yandex';
+@import './page/vacancie';

@@ -1,0 +1,117 @@
+.thanks{
+    width: 100%;
+    padding-top: 5.2rem;
+    font-family: 'Exo 2';
+    font-style: normal;
+    &__container{
+        padding-left: 9.7rem ;
+    }
+    &__content{
+      
+        
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        gap: 10.7rem;
+    }
+    &__img{
+        max-width: 46.0rem;
+        height: 43.7rem;
+        img{
+            max-width: auto;
+            height: 100%;
+        
+        }
+    }
+    &__body{
+        max-width: 32rem;
+        
+    }
+    &__title{
+        margin-bottom: 2.4rem;
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #FF716E;
+        margin-bottom: 5.9rem;
+        
+    }
+    &__link-block{
+    
+    }
+
+    @media screen  and (max-width:1024px){
+        padding-top: 9.0rem;
+        &__container{
+            padding-left: 0;
+        }
+        &__row{
+      
+            align-items: unset;
+            gap: 10.7rem;
+            flex-direction: column-reverse;
+        }
+        &__body{
+            max-width: 32rem;
+            margin: auto;
+        }
+        &__text{
+            margin-bottom: 4.8rem;
+            text-align: center;
+            
+        }
+        &__img{
+            max-width: 42.1rem;
+            height: 35.2rem;
+            margin: auto;
+            img{
+                max-width: auto;
+                height: 100%;
+            }
+        }
+        &__link{
+            text-align: center;
+        }
+        &__title{
+            text-align: center;
+            margin-bottom: 2.9rem;
+        }
+    }
+
+    @media screen  and (max-width:668px){
+        padding-top: 9.5rem;
+       
+        &__row{
+            gap: 3.8rem;
+
+        }
+        &__body{
+            max-width: 32rem;
+            margin: auto;
+        }
+        &__text{
+            margin-bottom: 2.4rem;
+            text-align: center;
+            
+        }
+        &__img{
+            max-width: 24.9rem;
+            height: 20.8rem;
+            img{
+                max-width: auto;
+                height: 100%;
+             
+            }
+        }
+        &__link{
+            text-align: center;
+        }
+        &__title{
+            text-align: center;
+            margin-bottom: 2.9rem;
+        }
+    }
+}

@@ -1,0 +1,194 @@
+.company-review{
+    width: 100%;
+    padding-top: 7.36rem;
+
+    &__container{
+        padding-left: 18.9rem;
+        .slick-next{
+            right: -10.8rem;
+            &::before{
+                content: url(../assets/img/right.svg);
+            }
+        }
+        .slick-prev{
+            left: -10.8rem;
+            &::before{
+                content: url(../assets/img/Arrow.svg);
+            }
+        }
+        .slick-dots li button::before{
+            color: white;
+        }
+    }
+    &__title{
+        margin-bottom: 7.147rem;
+    }
+    &__slider{
+        width: 37.92rem;
+        min-height: 18.465rem;
+        margin: auto;
+        // border: 1px solid white;
+        margin-bottom: 10.1rem;
+        
+    }
+    &__link{
+        width: 100%;
+        // border: 1px solid white;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+.review-item{
+    width: 100%;
+    
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.4rem;
+    }
+    &__autor{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__comment{
+        margin-bottom: 3.253rem;
+    }
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        width: 9.444rem;
+        height: 2.945rem;
+        img{
+            max-width: auto;
+            height: 100%;
+
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .company-review{
+        min-height: 74.8rem;
+        padding-top: 12.8rem;
+    
+        &__container{
+            padding-left:0;
+            .slick-next{
+                right: -10.8rem;
+                &::before{
+                    content: url(../assets/img/right.svg);
+                }
+            }
+            .slick-prev{
+                left: -10.8rem;
+                &::before{
+                    content: url(../assets/img/Arrow.svg);
+                }
+            }
+            .slick-dots li button::before{
+                color: white;
+            }
+        }
+        &__title{
+            margin-bottom: 4.8rem;
+            text-align: center;
+        }
+        &__slider{
+            width:40rem;
+            margin-bottom: 7.4rem;
+            
+        }
+        &__link{
+
+            justify-content: center;
+        }
+    
+    }
+    .review-item{
+        width: 100%;
+        
+        &__header{
+            margin-bottom: 2.55rem;
+        }
+
+        &__comment{
+            margin-bottom: 2.4rem;
+        }
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__logo{
+            width: 9.444rem;
+            height: 2.945rem;
+            img{
+                max-width: auto;
+                height: 100%;
+    
+            }
+        }
+    }
+    
+    
+}
+@media screen and (max-width:668px) {
+    .company-review{
+        min-height: 64.9rem;
+        padding-top: 9.8rem;
+    
+      
+        &__title{
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        &__slider{
+            width: 28.1rem;
+            margin-bottom: 3.2rem;
+            
+        }
+       
+        &__content{
+            width: 28.1rem;
+            margin: auto;
+        }
+    
+    }
+    .review-item{        
+        &__header{
+            margin-bottom: 1.6rem;
+        }
+        &__footer{
+            width: 12.6rem;
+            justify-content: unset;
+            align-items: auto;
+            flex-direction: column;
+            gap: 2.1rem;
+            margin: auto;
+            margin-bottom: 3.2rem;
+
+        }
+        &__logo{
+            width: 9.9rem;
+            height: 3.087rem;
+            img{
+                max-width: auto;
+                height: 100%;
+    
+            }
+        }
+    }
+    
+    
+}
+

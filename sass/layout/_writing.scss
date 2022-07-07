@@ -1,0 +1,237 @@
+.writing{
+    width: 100%;
+    padding-top: 6.4rem;
+    &__container{
+        padding-left: 18.4rem;
+    }
+    &__title{
+        margin-bottom: 3.7rem;
+    }
+    &__row{
+        display: flex;
+        gap: 19.1rem;
+        // border: 1px solid;
+        position: relative;
+      
+    }
+    &__items{
+        margin-bottom: 5rem;
+     
+    }
+    &__body{
+        // border: 1px solid red;
+    }
+
+    &__bottom{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__mobile{
+      
+        display: none;
+        gap: 4rem;
+    }
+    &__desktop{
+        display: flex;
+    }
+    &__wrapper-mobile{
+        padding-left: 19.1rem ;
+    }
+
+}
+
+.card-writing{
+    font-family: 'Exo 2';
+    font-style: normal;
+    max-width: 31.28rem;
+    min-height: 36.294rem;
+    &--big{
+        .card-writing__title{
+            max-width: 27.9rem;
+            min-height: 5.3rem;
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.0rem;
+            line-height: 2.4rem;
+            text-transform: uppercase;
+            color: #FFFF;
+            margin-bottom: 0.7rem;
+            
+        }
+        .card-writing__date{
+            margin-bottom:.9rem ;
+            &-text{
+                font-family: 'Exo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                color: #FFFFFF;
+                
+            }
+        }
+        .card-writing__img{
+          
+            max-width: 49.8rem;
+            height: 41.8rem;
+            position: absolute;
+            left: -9rem;
+            img{
+                height: 100%;
+                max-width: auto;
+            }
+        }
+    }
+    &__title{
+       
+        font-weight: 700;
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: .8rem;
+    }
+    &__date{
+        &-text{
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            color: #FFFFFF;
+        }
+    }
+    &__img{
+        width: 25.356rem;
+        height: 20.626rem;
+        img{
+            width: auto;
+            height: 100%;
+        }
+    }
+}
+.item-writing{
+    max-width: 32rem;
+    min-height: 7rem;
+    // border: 1px solid red;
+   
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        display: block;
+        width: .1rem;
+        height: 4.8rem;
+        background: #FFFFFF;
+        top: 0;
+        left: -2.4rem;
+    }
+    &:not(:last-child){
+        margin-bottom: 1.6rem;
+    }
+    &__title{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: #FFFFFF;
+        margin-bottom: 0.4rem;
+    }
+    &__text{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.4rem; 
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .writing{
+        padding-top: 19.3rem;
+        &__body{
+            display: none;
+        }
+        &__information{
+            width: 100%;
+            // border: 1px solid red;
+        }
+        &__desktop{
+            display: none;
+        }
+        &__wrapper-mobile{
+            overflow-x: auto;
+            scrollbar-width: none;
+            // touch-action: pan-x;
+            z-index: 1;
+         
+            &::-webkit-scrollbar {
+              width: 0;
+              height: 0;
+              background-color: transparent;
+            }
+        }
+        &__mobile{
+            display: inline-flex;
+            width: auto;
+            max-width: none;
+          
+        }
+        &__container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__title{
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width:668px) {
+    .writing{
+        padding-top: 8rem;
+        &__wrapper-mobile{
+            padding-left: 3.6rem ;
+        }
+        &__title{
+            text-align: center;
+        }
+
+        &__mobile{
+      
+         
+            gap: 1.7rem;
+        }
+    }
+    .card-writing{
+        max-width: 24.867rem;
+        min-height: 28.057rem;
+       
+      
+        // border: 1px solid red;
+        &__title{
+           
+            font-weight: 700;
+            font-size: 1.9rem;
+            line-height: 2.3rem;
+        }
+        &__date{
+            &-text{
+                font-weight: 500;
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+            }
+        }
+        &__img{
+            max-width: 21.196rem;
+            min-height: 13.861rem;
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}

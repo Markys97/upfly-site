@@ -1,0 +1,127 @@
+.our-work{
+    width: 100%;
+    // background: linear-gradient(257.56deg, #53CBF9 22.53%, #88DEFF 69.82%, #7AD7FA 69.82%);
+    padding-top: 8.3rem;
+    &__container{
+        padding-left: 18.4rem;
+    }
+    &__content{
+        position: relative;
+        width: 100%;
+        display: flex;
+
+    }
+    &__row{
+        max-width: 100%;
+        display: flex;
+        gap: 4rem;
+      
+
+        
+    }
+    &__title{
+        margin-bottom: 1.6rem;
+    }
+    &__text{
+        
+        margin-bottom: 3.2rem;
+    }
+    &__skill{
+        width: 23rem;
+        height: 6.6rem;
+        // border:1px solid red;
+        margin-bottom: 4.8rem;
+    }
+    &__link{
+        display: inline-block;
+        margin-bottom: 0.8rem;
+    }
+    &__bottom{
+        width: 100%;
+        // border:1px solid red;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__body{
+        width: 34.4rem;
+        min-height: 27.1rem;
+    }
+    &__img{
+        width: 34.7rem;
+        height: 36.8rem;
+        img{
+            width: auto;
+            height: 100%;
+        }
+    }
+    @media screen  and (max-width:1024px){
+        padding-top:12.4rem;
+        &__container{
+            padding-left:0;
+        }
+        &__row{
+            max-width: 44.4rem;
+            
+            margin: auto;
+            // border: 1px solid red;
+            gap: 6.6rem;
+            flex-direction: column-reverse;
+        }
+        &__img{
+            max-width: 30.4rem;
+            height: 32.3rem;
+            margin:auto;
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+        &__title{
+            margin-bottom: 3.2rem;
+            text-align: center;
+        }
+        &__text{
+            margin-bottom: 2.4rem;
+            text-align: center;
+        }
+        &__skill{
+           
+            // border:1px solid red;
+            margin: auto;
+            margin-bottom: 3.2rem;
+        }
+        &__bottom{
+            width: 100%;
+            // border:1px solid red;
+            display: flex;
+            justify-content: center;
+        }
+        
+        
+    }
+    @media screen  and (max-width:668px){
+        padding-top:8rem;
+        &__row{
+            max-width: 28.0rem;
+          
+            // border: 1px solid red;
+            gap: 5.8rem;
+            
+        }
+        &__title{
+            margin-bottom: 2.4rem;
+           
+        }
+        &__text{
+            margin-bottom: 3.6rem;
+           
+        }
+        &__skill{
+            margin-bottom: 3.6rem;
+        }
+        &__body{
+            width: 28rem;
+            min-height: 33.6rem;
+        }
+    }
+}

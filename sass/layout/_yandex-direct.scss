@@ -1,0 +1,330 @@
+.yandex-page{
+    width: 100%;
+ 
+    font-family: 'Exo 2';
+    font-style: normal;
+   
+    &__container{
+        padding-left: 15.9rem;
+        position: fixed;
+        top: 12rem;
+      
+    }
+    &__row{
+        display: flex;
+        gap: 5rem;
+    }
+    &__body{
+        padding-top: 2.2rem ;
+    }
+    &__img{
+        max-width: 39.1rem;
+        height: 39.1rem;
+        position: relative;
+        margin-top: -5rem;
+        img{
+            max-width: auto;
+            height: 100%;
+        }
+    }
+    &__body{
+        max-width: 30.4rem
+    }
+    &__title{
+        
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 5.2rem;
+        line-height: 5.4rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 3.4rem;
+         
+    }
+    &__text{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+}
+
+.article{
+    font-family: 'Exo 2';
+    font-style: normal;
+  
+    height: 94vh;
+    width: 80rem;
+    position: relative;
+    margin-top: 93vh;
+    background: #FFFFFF;
+    box-shadow: 0px 2.13333px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 5.3rem 5.3rem 0 0;
+    padding: 4.6rem 3.8rem 0 8rem;
+    margin-left: 10%;
+    &__content{
+        max-height: 78vh;
+        overflow: auto;
+        padding-right: .8rem;
+        &::-webkit-scrollbar {
+            background:#fff;
+            width: .4rem;
+            height: 4rem;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #EBEEF0;
+            border-radius: 1rem;
+        }
+    }
+    &__row{
+        display: flex;
+        gap: 2.4rem;
+        margin-bottom:6.2rem ;
+    }
+    &__body{
+        max-width: 32rem;
+    }
+    &__text{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #777B7C;
+        margin-bottom: 2.4rem;
+    }
+    &__img{
+        max-width: 33.8rem;
+        height: 25.0rem;
+        &--mobile{
+            display: none;
+        } 
+        img{
+            max-width: auto;
+            height: 100%;
+        }
+    }
+    &__title{
+        font-weight: 900;
+        font-size: 2.4rem;
+        line-height: 3.0rem;
+        text-transform: uppercase;
+        color: #777B7C;
+        margin-bottom: 3.2rem;
+    }
+    
+    
+
+}
+
+#yandex-page{
+    &::-webkit-scrollbar {
+        background:transparent;
+        width: 1rem;
+        height: 4rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #EBEEF0;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .yandex-page{
+        width: 100%;
+        padding-top: 12.4rem;
+
+        &__container{
+            padding-left:0;
+        }
+        &__content{
+            max-width: 44.6rem;
+            margin: auto;
+         
+        }
+        &__row{
+            gap: 7.8rem;
+            flex-direction: column-reverse;
+        }
+        &__body{
+            padding-top:0 ;
+            max-width: 100%;
+        }
+        &__img{
+            max-width: 44.6rem;
+            height: 34.6rem;
+            position: relative;
+            margin-top: 0rem;
+            margin: auto;
+           
+        }
+       
+        &__title{
+            font-size: 5rem;
+            line-height: 6.2rem;
+            margin-bottom: 4.3rem;
+            text-align: center;
+        }
+        &__text{
+           text-align: center;
+        }
+    }
+    .article{
+
+
+        width: 80rem;
+        position: relative;
+        margin-top: 83vh;
+        background: #FFFFFF;
+        padding: 4.6rem 3.8rem 0 8rem;
+        margin-left: 0;
+        &__content{
+            max-height: 75rem;
+            overflow: auto;
+            padding-right: .8rem;
+            &::-webkit-scrollbar {
+                background:#fff;
+                width: .4rem;
+                height: 4rem;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #EBEEF0;
+                border-radius: 1rem;
+            }
+        }
+        &__row{
+            display: flex;
+            gap: 2.4rem;
+            margin-bottom:6.2rem ;
+        }
+        &__body{
+            max-width: 32rem;
+        }
+        &__text{
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: #777B7C;
+            margin-bottom: 2.4rem;
+        }
+        &__img{
+            max-width: 33.8rem;
+            height: 25.0rem;
+            img{
+                max-width: auto;
+                height: 100%;
+            }
+        }
+        &__title{
+    
+            font-weight: 900;
+            font-size: 2.4rem;
+            line-height: 3.0rem;
+            text-transform: uppercase;
+            color: #777B7C;
+            margin-bottom: 3.2rem;
+        }
+        
+        
+    
+    }
+}
+@media screen and (max-width:668px) {
+    .yandex-page{
+      
+        padding-top: 15.3rem;
+
+        &__content{
+            max-width: 30.6rem;
+            margin: auto;
+         
+        }
+        &__row{
+            gap: 8.9rem;
+        }
+       
+        &__img{
+            max-width: 30.6rem;
+            height: 23.7rem;
+           
+           
+        }
+       
+        &__title{
+            font-size: 3rem;
+            line-height: 3.4rem;
+            margin-bottom: 2.4rem;
+        }
+       
+    }
+    .article{
+
+        width: 60.6rem;
+        position: relative;
+        margin-top: 74vh;
+        padding: 4.6rem 2rem 0 2rem;
+      
+        &__content{
+            max-height: 87vh;
+            overflow: auto;
+            padding-right: .8rem;
+            &::-webkit-scrollbar {
+                background:#fff;
+                width: .4rem;
+                height: 4rem;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #EBEEF0;
+                border-radius: 1rem;
+            }
+        }
+        &__row{
+            display: flex;
+            gap: 1.6rem;
+            margin-bottom:6.2rem ;
+        }
+        &__body{
+            max-width: 100%;
+        }
+        &__text{
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: #777B7C;
+            margin-bottom: 1.6rem;
+            &--short{
+                margin-bottom: -5rem;
+            }
+        }
+        &__img{
+          display: none;
+          &--mobile{
+            display: block;
+            max-width: 20.7rem;
+            height: 10.9rem;
+            margin-bottom: 1.6rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        } 
+        }
+        &__title{
+            font-size: 2rem;
+            line-height: 2.4rem;
+            margin-bottom: 2.4rem;
+            max-width: 28rem;
+        }
+        
+        
+    
+    }
+}
+
+

@@ -1,0 +1,54 @@
+.introduction{
+    width: 100%;
+    &__container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__text{
+
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 2.4rem;
+        line-height: 3.0rem; 
+        text-transform: uppercase;      
+        color: #FFFFFF;
+    }
+    &__icon-down{
+        width: 3rem;
+        height: .921rem;
+        position: absolute;
+
+        bottom:1.769rem;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        img{
+            width: auto;
+            height: 100%;
+        }
+    }
+
+  
+    @media screen and (max-width:668px) {
+        min-height: 55.4rem;
+        &__container{
+           
+         
+        }
+        &__text{
+            font-size: 2rem;
+            line-height: 2.4rem; 
+        }
+        &__icon-down{
+            width: 5.607rem;
+            height: 1.722rem;
+            bottom:13.3rem;
+           
+        }
+    }
+}

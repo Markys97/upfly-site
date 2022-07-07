@@ -1,0 +1,296 @@
+.about-contact{
+    width: 100%;
+    padding-top: 6.4rem;
+    &__container{
+        padding-left: 18.4rem;
+    }
+    &__content{
+        max-width: 73.8rem;
+        margin: auto;
+    }
+ 
+    &__information{
+        border-bottom:.1rem solid #fff;
+        min-height: 29.1rem;
+        padding-bottom: 1rem;
+    }
+    &__title{
+        margin-bottom: 2.9rem;
+    }
+    &__title-form{
+        display: inline-block;
+        margin-bottom: 2rem;
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+        color: #FFFFFF;
+    }
+    &__text{
+        &:not(:last-child){
+            margin-bottom: 2.4rem;
+        }
+    }
+    &__form{
+        display: flex;
+        gap:2.7rem;
+        width: 100%;
+       position: relative;
+       z-index: 10;
+      
+        &-right{
+          width: 40rem;
+          &-mobile{
+            display: none;
+          }
+        }
+        &-left{
+            max-width: 28.6rem;
+         
+        }
+        
+
+    }
+    &__textarea{
+       
+        max-height: 24.1rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        &::-webkit-scrollbar {
+
+            background: #FFFFFF;
+            border-radius: .5533422rem;
+            width: .5rem;
+            height: 7.0rem;
+           
+          }
+        
+        textarea{
+            display: inline-block;
+            padding-right: 1.8rem;
+            width: 40rem;
+          outline: none;
+          border: none;
+          background: transparent;
+          border-bottom: .1rem solid #fff;
+          resize: none;
+          -webkit-appearance: none;
+            overflow: hidden;
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            color: #FFFFFF;
+          
+        }
+        .textarea-mobile{
+            width: 100%;
+        }
+    }
+  
+    &__body{
+        // border: 1px solid red;
+        position: relative;
+        width: 100%;
+    }
+    &__img{
+        position: absolute;
+        right: -4rem;
+        bottom: -7rem;
+        width: 36.5rem;
+        height: 26.6rem;
+        z-index: -1;
+        margin-top: 3rem;
+        filter: blur(5.33422px);
+        // &::after{
+        //     content: '';
+        //     position: absolute;
+        //     display: block;
+        //     bottom: 0;
+        //     top: 0;
+        //     right: 0;
+        //     left: 0;
+        //     filter: blur(5.33422px);
+        //     z-index: 1;
+      
+        // }
+       
+        img{
+            max-width: auto;
+            height: 100%;
+            display: inline-block;
+            
+        }
+    }
+    &__item{
+        &--comment{
+            display: none;
+        }
+    }
+    &__submit{
+        margin-bottom: 6rem;
+    }
+    
+    
+
+
+}
+
+#comment_div,#comment_div-mobile{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #FFFFFF;
+   white-space: pre-wrap;
+   word-wrap: break-word;
+   height: auto;
+   position: absolute;
+   left: -5000%;
+   top: -2000%;
+   padding-right: 1.8rem;
+   width: 40rem;
+   right: auto;
+   border-bottom: .2rem solid #fff;
+
+  
+
+}
+#textarea-mobile{
+    display: inline-block;
+    padding-right: 1.8rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: .1rem solid #fff;
+    resize: none;
+    -webkit-appearance: none;
+    overflow: hidden;
+     font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #FFFFFF;
+   
+ 
+}
+
+@media screen and (max-width:1024px) {
+    .about-contact{
+        padding-top: 10.5rem;
+        &__container{
+            padding-left: 0;
+        }
+        &__content{
+            max-width: 40.0rem;
+            margin: auto;
+        }
+        &__form{
+            display: block;
+            gap:0;
+            width: 100%;       
+            &-right{
+              width: 100%;
+              display: none;
+              &-mobile{
+                display: block;
+              }
+            }
+            &-left{
+                max-width: 100%;
+              
+             
+            }
+            
+    
+        }
+        &__body{
+            position: unset;
+            // border: 1px solid red;
+            width: 100%;
+             
+        }
+        &__row{
+           
+        }
+        &__img{
+            bottom: 0;
+            right: 0;
+            filter: unset;
+            width: 36.1rem;
+            height: 26.3rem;
+        }
+        &__title{
+          text-align: center;
+          margin-bottom: 4.8rem;
+        }
+        &__submit{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2.4rem;
+        }
+        &__item{
+            margin-bottom: 1.6rem;
+            
+           
+        }
+        &__authorization{
+            max-width: 30.0rem;
+            min-height: 2.4rem;
+            // border: 1px solid red;
+            margin-bottom: 2.4rem;
+        }
+        &__item{
+            &--comment{
+                display: block;
+            }
+        }
+        
+    }
+    #comment_div-mobile,.textarea-mobile{
+        width: 40rem;
+    }
+    
+
+}
+
+@media screen and (max-width:668px){
+    .about-contact{
+        min-height: 80.4rem;
+        &__content{
+            max-width: 28rem;
+            margin: auto;
+        }
+        &__body{
+            max-width: 28rem;
+            width: 100%;
+            margin: auto;
+             
+        }
+        &__data-item{
+            width: 21.9rem;
+            height: 4.0rem;
+            gap: 1.8rem;
+        }
+        &__img{
+            width: 25.0rem;
+            height: 18.2rem;
+            right: auto;
+            bottom: 4.8;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+    }
+  
+    #comment_div-mobile,.textarea-mobile{
+        width: 28rem;
+    }
+
+   
+}

@@ -1,0 +1,201 @@
+.menu-site{
+    font-family: 'Exo 2';
+    font-style: normal;
+    max-width: 68.3rem;
+    width: 100%;
+    height: 100vh;
+    background: #FFFFFF;
+    box-shadow: 0rem .213333rem 1.6rem rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    left: -200%;
+    z-index: 1002;
+    transition: all 900ms ease;
+    &-open{
+        left: 0;
+    }
+    &__content{
+        padding-left: 6.4rem;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    &__header{
+        display: flex;
+       justify-content: flex-end;
+    
+        margin-bottom: 2.2em;                            
+       
+    }
+    &__close{
+     
+        margin:2.1rem 2.1rem 0 0;
+    }
+    &__list{
+        flex-grow: 1;
+      
+    }
+    &__item{
+        margin-bottom: 1.2rem;
+      
+    }
+    &__link{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 5.2rem;
+        line-height: 5.3rem;
+        text-transform: uppercase;
+        color: #D6DDE0;
+        transition: all 600ms ease;
+        text-decoration: none;
+        &:hover,&--active{
+            color: #777B7C;
+            padding-left:1.1rem ;
+        }
+    }
+    &__footer{
+       display: flex;
+       justify-content: space-between;
+      padding-bottom: 2.4rem;
+    }
+    &__phone{
+        width: 15rem;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+      
+        &-text{
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            color: #777B7C;
+            
+        }
+        &-img{
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+    &__social-network{
+        .social-network__icon{
+            width: 3rem;
+            height: 3rem;
+            img,svg{
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+            } 
+        }
+     }
+    @media screen and (max-width:1024px) {
+
+        max-width: 62.1rem;
+        
+        &__header{
+            display: flex;
+           justify-content: flex-end;
+            margin-bottom: 15.7em;                            
+           
+        }
+        &__list{
+            flex-grow: 1;
+          
+        }
+        &__item{
+            margin-bottom: .8rem;
+          
+        }
+        &__link{
+            font-size: 5rem;
+            line-height: 6.2rem;
+        }
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+           padding-bottom: 4.2rem;
+         }
+         &__phone{
+             width: 15rem;
+            
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             gap: 1.2rem;
+           
+             &-text{
+                 font-weight: 700;
+                 font-size: 1.5rem;
+                 line-height: 1.8rem;
+                 color: #777B7C;
+                 
+             }
+             &-img{
+                 width: 1.9rem;
+                 height: 1.9rem;
+             }
+         }
+         &__social-network{
+            .social-network__icon{
+                width: 2.9rem;
+                height: 2.9rem;
+               
+            }
+         }
+    }
+    @media screen and (max-width:668px) {
+
+        max-width: 90%;
+        
+        &__header{
+            display: flex;
+           justify-content: flex-end;
+            margin-bottom: 10.8rem;                            
+           
+        }
+     
+        
+        &__link{
+            font-size: 2.6713rem;
+            line-height: 2.7rem;
+        }
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+           padding-bottom: 3.2rem;
+         }
+         &__phone{
+             width: 15rem;
+            
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             gap: 1.2rem;
+           
+             &-text{
+                 font-weight: 700;
+                 font-size: 1.5rem;
+                 line-height: 1.8rem;
+                 color: #777B7C;
+                 
+             }
+             &-img{
+                 width: 1.6rem;
+                 height: 1.6rem;
+             }
+         }
+         &__social-network{
+            .social-network__icon{
+                width: 2.2rem;
+                height: 2.2rem;
+               
+            }
+         }
+         &__content{
+            padding-left: 3.3rem;
+          
+        }
+    }
+}

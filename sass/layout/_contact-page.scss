@@ -1,0 +1,232 @@
+.contact-page{
+    font-family: 'Exo 2';
+    font-style: normal;
+  
+    &__container{
+     
+        padding-top: 9.8rem;
+        padding-left: 3.904rem;
+        // border: 1px solid red;
+    }
+    &__row{
+      display: flex;
+      gap: 2.206rem;
+    }
+    &__img{
+        max-width: 44.29rem;
+        height: 35.25rem;
+        // border: 1px solid red;
+        img{
+            max-width: auto;
+            height: 100%;
+        }
+    }
+    &__body{
+        // max-width: 46.7rem;
+        // border: 1px solid red;
+        position: relative;
+    }
+    &__title{
+        font-family: 'Exo 2'!important;
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 5.2rem;
+        line-height: 5.4rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 3.4rem;
+        text-align: center;
+    }
+    &__form{
+        max-width: 25.6rem;
+        // border: 1px solid black;
+
+        .form__label{
+            display: block;
+            margin-bottom: .8rem;
+        }
+        .form__item:nth-child(2){
+            margin-bottom: 1.6rem;
+        }
+        .form__authorization{
+            max-width: 24.6rem;
+            margin-bottom: 2rem;
+            // border: 1px solid red;
+        }
+        .form__submit{
+            margin-bottom: 2rem;
+        }
+    }
+    &__phone{
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 1.2rem;
+    }
+    &__network{
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        right: 4.2rem;
+    }
+    &__content{
+        &::-webkit-scrollbar {
+            background:transparent;
+            width: 1rem;
+            height: 4rem;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #EBEEF0;
+            border-radius: 1rem;
+        }
+    }
+
+    @media screen and (max-width:1024px) {
+        &__container{
+            padding-top: 12.4rem;
+            padding-left: 0;
+           
+        }
+        &__row{
+            gap: 5rem;
+            flex-direction: column-reverse;
+        }
+        &__title{
+            font-size: 5rem;
+            line-height: 6.2rem;
+            margin-bottom: 2.4rem;
+        }
+        &__img{
+            max-width: 40.29rem;
+            height: 35.25rem;
+            // border: 1px solid red;
+            img{
+                max-width: auto;
+                height: 100%;
+            }
+        }
+        &__content{
+            max-width: 49.5rem;
+            margin: auto;
+            
+        }
+        &__body{
+
+         
+            position: relative;
+            width: 100%;
+        }
+        &__form{
+            max-width: 40rem;
+            margin: auto;
+        }
+        &__phone{
+            padding-left: 3rem;
+        }
+        &__network{
+            flex-direction: column;
+            position: absolute;
+            bottom: 0;
+            right:0;
+        }
+        &__data{
+            padding-left: 3rem;
+        }
+        &__form{
+            max-width: 40rem;
+            // border: 1px solid black;
+    
+            .form__label{
+                display: block;
+                margin-bottom: .8rem;
+            }
+            .form__item:nth-child(2){
+                margin-bottom: 1.6rem;
+            }
+            .form__authorization{
+                max-width: 24.6rem;
+                margin-bottom: 2rem;
+                // border: 1px solid red;
+            }
+            .form__submit{
+                margin-bottom: 4.8rem;
+                text-align: center;
+            }
+        }
+        
+    }
+    @media screen and (max-width:668px) {
+        &__container{
+            padding-top: 9.5rem;
+           
+        }
+        &__row{
+            gap: 4.3rem;
+            flex-direction: column-reverse;
+        }
+        &__title{
+            font-size: 3rem;
+            line-height: 3.4rem;
+            margin-bottom: 2.4rem;
+        }
+        &__img{
+            max-width: 25.9rem;
+            height: 20.7rem;
+            // border: 1px solid red;
+            img{
+                max-width: auto;
+                height: 100%;
+            }
+        }
+        &__content{
+            max-width: 25.9rem;
+        }
+        &__body{
+            position: unset;
+        }
+        &__form{
+            max-width: 40rem;
+            margin: auto;
+        }
+        &__phone{
+            padding-left: 0;
+        }
+        &__network{
+            flex-direction: row;
+            justify-content: center;
+            position: unset;
+            gap: 2rem;
+           
+        }
+        &__data{
+            padding-left: 0;
+            margin-bottom: 3.7rem;
+        }
+        &__form{
+            max-width: 40rem;
+            // border: 1px solid black;
+    
+            .form__label{
+                display: block;
+                margin-bottom: .8rem;
+            }
+            .form__item:nth-child(2){
+                margin-bottom: 1.6rem;
+            }
+            .form__authorization{
+                max-width: 24.6rem;
+                margin-bottom: 2rem;
+                // border: 1px solid red;
+            }
+            .form__submit{
+                margin-bottom: 4.8rem;
+                text-align: center;
+            }
+        }
+        
+    }
+}

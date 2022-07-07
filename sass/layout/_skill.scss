@@ -1,0 +1,362 @@
+.skill{
+    width: 100%;
+    // background: linear-gradient(257.56deg, #4CD3E6 22.53%, #80E1EE 69.82%);
+    padding-top: 8.8rem;
+    &__container{
+      
+        padding-left: 18.4rem;
+    }
+    &__content{
+        display: flex;
+        width: 60.3rem;
+        height: 19.8rem;
+       
+        gap: 7.5rem;
+
+    }
+    &__title{
+        margin-bottom: 4.8rem;
+    }
+   
+}
+
+.item-skill{
+    width: 26.1rem;
+    // border:1px solid white;
+    &__list{
+        
+    }
+    &__title{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 1.6rem;
+        
+    }
+    &__list{
+        counter-reset: list;
+    }
+    &__item{
+        margin-bottom:1.6rem ;
+        position: relative;
+        &::before{
+            counter-increment: list;
+            content: "0"counter(list);
+            position: absolute;
+            left: 0;
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 2.24028rem;
+            line-height: 2.7rem;
+            /* identical to box height */
+            
+            
+            color: #FFFFFF;
+        }
+      
+        
+    }
+    &__link{
+        padding-left: 3.2rem;
+
+    }
+}
+
+.modal-skill{
+    max-width: 68rem;
+    height: 100vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    right: -200%;
+    bottom: 0;
+    z-index: 1002;
+    font-family: 'Exo 2';
+    font-style: normal;
+    transition: all 800ms ease;
+    &-open{
+        right: 0;
+    }
+
+    &__top{
+        padding-top: 1.6rem;
+        padding-left: 1.6rem;
+        margin-bottom: 10vh
+    }
+    &__content{
+        padding-left: 9.6rem;
+         .slick-next:before {
+            content: url(../assets/img/right-gras.png);
+            
+        }
+        .slick-next{
+            right: 15vw;
+            top: 31%;
+        }
+     
+         .slick-prev:before {
+            content: url(../assets/img/left-gras.png);
+        }
+        .slick-prev{
+            left: -6vw;
+            top: 31%;
+        }
+    }
+    &__title{
+        font-weight: 800;
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+        color: #777B7C;
+        margin-bottom: 2rem;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #777B7C;
+        margin-bottom: 3.2rem;
+        max-width: 40rem;
+        margin-bottom: 2vh;
+    }
+    &__link{
+        display: inline-flex;
+        gap: 3.2rem;
+        height: 6rem;
+        &-text{
+            font-weight: 900;
+            font-size: 2.6rem;
+            line-height: 3.1rem;
+            text-transform: uppercase;
+            color: #8FD8F6;
+            width:15.9rem ;
+            text-align: center;
+        }
+        &-img{
+            align-self: flex-end;
+            width: 3rem;
+        }
+    }
+    &__list{
+        margin-bottom: 3rem;
+        &-item{
+         margin-bottom: 4vh;
+        }
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .skill{
+        padding-top: 32.9rem ;
+        &__container{
+      
+            padding-left: 0;
+        }
+       
+        &__content{
+            max-width: 55.3rem;
+            min-height: 24.9rem;
+            gap: 6.4rem;
+          
+            margin: auto;
+    
+        }
+        &__title{
+            margin-bottom: 4.8rem;
+            text-align: center;
+        }
+    }
+    .item-skill{
+      
+        // border: 1px solid red;
+       
+        &__title{
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.0rem;
+            line-height: 2.4rem;
+            text-transform: uppercase;
+            color: #FFFFFF;
+          
+            
+        }
+       
+        &__item{
+            margin-bottom:1.6rem ;
+            position: relative;
+            &::before{
+                counter-increment: list;
+                content: "0"counter(list);
+                position: absolute;
+                left: 0;
+                font-family: 'Exo 2';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 2.24028rem;
+                line-height: 2.7rem;
+                /* identical to box height */
+                
+                
+                color: #FFFFFF;
+            }
+          
+            
+        }
+        &__link{
+            span{
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            }
+    
+        }
+    }
+    .modal-skill{
+        max-width: 54.6rem;
+       
+        &__top{
+            padding-top: 1.6rem;
+            padding-left: 1.6rem;
+            margin-bottom: 7.9rem;
+        }
+        &__content{
+            padding-left: 5.2rem;
+            .slick-next{
+                right: 5vw;
+                top: 31%;
+            }
+            .slick-prev{
+                left: -5vw;
+                top: 31%;
+            }
+        }
+        &__title{
+            font-weight: 800;
+            font-size: 2.4rem;
+            line-height: 3rem;
+            color: #777B7C;
+            margin-bottom: 2rem;
+        }
+        &__text{
+            line-height: 1.6rem;
+
+        }
+        &__link{
+            
+            gap: 3.2rem;
+            &-text{
+                font-weight: 900;
+                font-size: 2.6rem;
+                line-height: 3.1rem;
+                text-transform: uppercase;
+                color: #8FD8F6;
+                width:15.9rem ;
+                text-align: center;
+            }
+        }
+        &__list{
+            margin-bottom: 5.3rem;
+            &-item{
+             margin-bottom: 2.1rem;
+            }
+        }
+    
+    }
+}
+@media screen and (max-width:668px) {
+    .skill{
+        padding-top: 32.9rem ;
+        &-condition-page{
+            padding-top: 13rem;
+        }
+        &__container{
+      
+            padding-left: 0;
+        }
+        &__title{
+            margin-bottom: 4.8rem;
+            text-align: center;
+        }
+
+        &__container-row{
+            width: auto;
+            overflow-x: auto;
+            scrollbar-width: none;
+            // touch-action: pan-x;
+            z-index: 1;
+            margin: 0 -2rem;
+            &::-webkit-scrollbar {
+              width: 0;
+              height: 0;
+              background-color: transparent;
+            
+            }
+        }
+        &__content{
+          
+            gap: 3.2rem;
+            margin: auto;
+
+            display: inline-flex;
+            width: auto;
+            max-width: none;
+            padding: 0 2rem 0 4rem;
+            margin-left: 2rem;
+    
+        }
+    }
+
+    .modal-skill{
+        max-width: 90%;
+       
+       
+        &__content{
+            padding-left: 1.6rem;
+            padding-right: 2rem;
+            .slick-next{
+                right: auto;
+                top: 54vh;
+                left: 13vw;
+            }
+            .slick-prev{
+                left: 1vw;
+                top: 54vh;
+            }
+        }
+        &__title{
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-bottom: 1.6rem;
+        }
+        &__text{
+            line-height: 1.6rem;
+
+        }
+        &__link{
+            height: 8rem;
+            gap: 3.2rem;
+            &-text{
+                font-weight: 900;
+                font-size: 2.6rem;
+                line-height: 3.1rem;
+                text-transform: uppercase;
+                color: #8FD8F6;
+                width:15.9rem ;
+                text-align: center;
+            }
+        }
+        &__list{
+            margin-bottom: 5.3rem;
+            &-item{
+             margin-bottom: 2.1rem;
+            }
+        }
+    
+    }
+  
+}

@@ -1,0 +1,134 @@
+.video-page{
+    width: 100%;
+  
+    font-family: 'Exo 2';
+    font-style: normal;
+    &__container{
+        top: 8.7rem;
+        padding-left: 18.7rem;
+        position: fixed;
+    }
+    &__row{
+        display: flex;
+        gap: 7.1rem;
+        position: relative;
+    }
+    &__img{
+        max-width: 42.2rem;
+        height: 36.1rem;
+
+    
+        img{
+            max-width: auto;
+            height: 100%;
+        }
+    }
+    &__body{
+        max-width: 30.4rem;
+
+        margin-left: auto;
+    }
+    &__title{
+        font-weight: 900;
+        font-size: 5.2rem;
+        line-height: 5.4rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 3.4rem;
+        
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #FFFFFF;
+    }
+
+}
+#video-page{
+    &::-webkit-scrollbar {
+        background:transparent;
+        width: 1rem;
+        height: 4rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #EBEEF0;
+        border-radius: 1rem;
+    }
+}
+
+.video-page-bottom{
+    font-family: 'Exo 2';
+    font-style: normal;
+    background: #FFFFFF;
+    box-shadow: 0px 2.13333px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 5.3rem 5.3rem 0 0;
+    width: 80.0rem;
+    height: 98vh;
+    z-index: 20;
+    margin-top: 97vh;
+    &__container{
+        padding: 4.6rem 3.8rem 0 8rem;
+    }
+    &__row{
+        display: flex;
+        gap: 2.4rem;
+        margin-bottom: 1.6rem;
+    }
+    &__body{
+        max-width: 32rem;
+    }
+    &__title{
+
+        font-weight: 900;
+        font-size: 2.4rem;
+        line-height: 3.0rem;
+        text-transform: uppercase;
+        color: #777B7C;
+        margin-bottom: 3.2rem;
+        
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #777B7C;
+    }
+    &__video{
+        max-width: 33.8rem;
+        height: 19.0rem;
+        position: relative;
+        &-img{
+            max-width: auto;
+            height: 100%;
+        }
+        &-btn{
+            display: inline-block;
+            position: absolute;
+            z-index: 20;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 10.2rem;
+            height: 11.0rem;
+            cursor: pointer;
+            img{
+                max-width: auto;
+                height: 100%;
+            }
+
+        }
+    }
+    &__texts{
+        margin-bottom: 3.6rem;
+    }
+    &__footer{
+        padding-left: 2.4rem;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.9rem;
+        color: #777B7C;
+        
+    }
+}
